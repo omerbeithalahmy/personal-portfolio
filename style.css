@@ -250,6 +250,45 @@ body {
   transform: translateY(-3px);
 }
 
+.cert-card {
+  flex-direction: row;
+  align-items: center;
+}
+
+.cert-card .cert-badge-column {
+  flex: 0 0 130px;
+  width: 130px;
+  min-width: 130px;
+  max-width: 130px;
+  height: 130px;
+  background: var(--bg-primary);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+  border: 1px solid #eaeaea;
+  overflow: hidden;
+}
+
+.cert-icon {
+  font-size: 4rem;
+}
+
+.fa-aws.cert-icon {
+  font-size: 4.2rem;
+}
+
+@media (max-width: 650px) {
+  .cert-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cert-card .cert-badge-column {
+    margin: 0 auto;
+  }
+}
+
 .detailed-card.align-center {
   align-items: center;
 }
