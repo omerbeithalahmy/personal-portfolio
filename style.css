@@ -83,6 +83,22 @@ body {
   margin: 0 1rem;
   font-size: 0.8rem;
   font-weight: var(--weight-semibold);
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link.active {
+  color: var(--primary-color);
+}
+
+.navbar .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
 }
 
 .navbar #logo a {
@@ -157,8 +173,22 @@ body {
 }
 
 .hero-social a:hover {
-  transform: translateY(-3px);
-  color: var(--primary-color);
+  transform: translateY(-5px);
+  color: var(--secondary-color);
+}
+
+/* =========================================
+   ABOUT ME
+   ========================================= */
+.about-container {
+  margin-top: 6rem;
+  margin-bottom: 8rem;
+}
+
+.about-container p {
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .division {
