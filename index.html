@@ -165,8 +165,7 @@
       <div class="detailed-projects-list">
         
         <!-- Project 1: ScoutFlow -->
-        <article class="detailed-card">
-
+        <article class="detailed-card with-arch">
           <div class="project-details-column">
             <h3>ScoutFlow</h3>
             <p>End-to-end NBA analytics platform spanning 3 repositories. Includes a Python FastAPI microservices backend, PostgreSQL database, Nginx/JS frontend, modular Terraform infrastructure provisioning a production-ready EKS cluster, and GitOps deployment via ArgoCD across dev/staging/production environments.</p>
@@ -176,17 +175,22 @@
               <a href="https://github.com/omerbeithalahmy/scoutflow-gitops" target="_blank" class="btn btn-primary btn-pill">GitOps Repo</a>
             </div>
           </div>
+          <div class="project-arch-container">
+            <img src="scoutflow-architecture.png" alt="ScoutFlow Architecture" class="project-arch-img" onclick="window.open(this.src, '_blank')">
+          </div>
         </article>
 
         <!-- Project 2: OpsGuardian -->
-        <article class="detailed-card">
-
+        <article class="detailed-card with-arch">
           <div class="project-details-column">
             <h3>OpsGuardian</h3>
             <p>Slack-native AWS governance bot built with Python (FastAPI) & Boto3. Automated scanning and active remediation across 12+ cloud resource types via Kubernetes CronJobs. Zero-secret EKS infrastructure using IRSA with self-healing continuous delivery through ArgoCD.</p>
             <div class="project-buttons">
               <a href="https://github.com/omerbeithalahmy/ops-guardian" target="_blank" class="btn btn-primary btn-pill">App Repo</a>
             </div>
+          </div>
+          <div class="project-arch-container">
+            <img src="ops-guardian-architecture.png" alt="OpsGuardian Architecture" class="project-arch-img" onclick="window.open(this.src, '_blank')">
           </div>
         </article>
 
