@@ -124,28 +124,41 @@ body {
   height: 100%;
 }
 
-/* Profile icon */
-.profile-icon {
+/* Profile Image */
+.profile-img-container {
   width: 150px;
   height: 150px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--primary-color);
+  box-shadow: var(--shadow);
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Hero Social Icons */
+.hero-social {
+  margin-top: 1.5rem;
   display: flex;
-  align-items: center;
+  gap: 1.5rem;
   justify-content: center;
-  animation: bounce 1s infinite alternate;
 }
 
-.profile-icon i {
-  font-size: 130px;
+.hero-social a {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hero-social a:hover {
+  transform: translateY(-3px);
   color: var(--primary-color);
-}
-
-@keyframes bounce {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-10px);
-  }
 }
 
 .division {
