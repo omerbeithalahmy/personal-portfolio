@@ -1,4 +1,3 @@
-// Mobile menu
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -7,7 +6,6 @@ hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
 
-// Close navbar when link is clicked
 document.querySelectorAll(".nav-link").forEach((link) => {
   link.addEventListener("click", () => {
     hamburger.classList.remove("active");
@@ -15,13 +13,11 @@ document.querySelectorAll(".nav-link").forEach((link) => {
   });
 });
 
-// Year in footer
 const dateEl = document.getElementById("datee");
 if (dateEl) {
   dateEl.textContent = new Date().getFullYear();
 }
 
-// Form Handling
 const contactForm = document.getElementById("contact-form");
 const formStatus = document.getElementById("form-status");
 
@@ -59,7 +55,6 @@ if (contactForm) {
   });
 }
 
-// Scroll to Top
 const scrollTopBtn = document.getElementById("scroll-top");
 
 window.addEventListener("scroll", () => {
@@ -77,12 +72,11 @@ scrollTopBtn.addEventListener("click", () => {
   });
 });
 
-// Active Link Observer
 const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll(".nav-link");
 
 const options = {
-  threshold: 0.7, // 70% of the section must be visible
+  threshold: 0.7, 
 };
 
 const observer = new IntersectionObserver((entries) => {

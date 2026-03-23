@@ -1,8 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900);
 
-/* variables */
 :root {
-  /* Colors */
   --primary-color: #ffcd42;
   --secondary-color: #ffd35c;
   --bg-primary: #ffffff;
@@ -14,12 +12,10 @@
 
   --shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 
-  /* Font Weight */
   --weight-small: 400;
   --weight-semibold: 600;
   --weight-bold: 800;
 
-  /* Max width */
   --width-small: 600px;
   --width-medium: 1100px;
   --width-large: 1300px;
@@ -30,7 +26,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Reset default styling */
 * {
   margin: 0;
   padding: 0;
@@ -46,7 +41,6 @@ a {
   color: var(--text-color);
 }
 
-/* Main styling */
 body {
   background: var(--bg-primary);
   color: var(--text-color);
@@ -54,7 +48,6 @@ body {
   line-height: 1.5;
 }
 
-/* Navbar */
 .navbar {
   position: fixed;
   top: 0;
@@ -117,7 +110,6 @@ body {
   font-size: 0.9rem;
 }
 
-/* hamburger */
 .hamburger {
   margin-bottom: 0.1rem;
   display: none;
@@ -133,14 +125,12 @@ body {
   background-color: var(--bg-secondary);
 }
 
-/* Hero section */
 #hero {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-/* Profile Image */
 .profile-img-container {
   width: 150px;
   height: 150px;
@@ -158,7 +148,6 @@ body {
   display: block;
 }
 
-/* Hero Social Icons */
 .hero-social {
   margin-top: 1.5rem;
   display: flex;
@@ -177,9 +166,6 @@ body {
   color: var(--secondary-color);
 }
 
-/* =========================================
-   ABOUT ME
-   ========================================= */
 .about-container {
   margin-top: 6rem;
   margin-bottom: 8rem;
@@ -198,9 +184,6 @@ body {
   margin: 5.5rem 0;
 }
 
-/* =========================================
-   SKILLS SECTION
-   ========================================= */
 .skills-container {
   display: flex;
   flex-direction: column;
@@ -246,9 +229,6 @@ body {
   color: var(--text-color);
 }
 
-/* =========================================
-   DETAILED PROJECTS SECTION (From reference)
-   ========================================= */
 .project-container,
 .certifications-container {
   display: flex;
@@ -309,10 +289,9 @@ body {
   }
   
   .detailed-card.with-arch .project-arch-container {
-    order: -1; /* Keep image on top when stacked */
+    order: -1; 
   }
 }
-
 
 .detailed-card:hover {
   border-color: var(--primary-color);
@@ -435,9 +414,6 @@ body {
   margin-top: 3rem;
 }
 
-/* =========================================
-   CERTIFICATIONS
-   ========================================= */
 .cert-badge-column {
   display: flex;
   justify-content: center;
@@ -452,9 +428,6 @@ body {
   font-size: 5rem;
 }
 
-/* =========================================
-   CONTACT SECTION
-   ========================================= */
 .contact-section {
   margin-bottom: 55rem;
 }
@@ -525,7 +498,6 @@ body {
   }
 }
 
-/* Footer */
 #footer {
   margin-top: 5rem;
   background: #111111;
@@ -568,7 +540,6 @@ body {
   font-size: 0.8rem;
 }
 
-/* Responsiveness */
 @media (max-width: 1000px) {
   .project {
     display: grid;
@@ -668,9 +639,6 @@ body {
   }
 }
 
-/* =========================================
-   SCROLL TO TOP
-   ========================================= */
 .scroll-top {
   position: fixed;
   bottom: 2rem;
